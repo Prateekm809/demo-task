@@ -37,7 +37,7 @@ function LoginForm({ onForgotPasswordClick }) {
 
   return (
     <>
-      <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-sm border border-gray-200 mt-[110px] text-[16px]">
+      <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-sm border border-gray-200 sm:mt-[110px] text-[16px]">
         <form onSubmit={handleSubmit}>
           <input
             type="email"

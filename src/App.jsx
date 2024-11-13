@@ -49,15 +49,16 @@ function App() {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-white p-4">
-      <div className="flex flex-grow w-full items-center justify-center">
-        <div className="w-1/2 flex flex-col justify-center items-center pr-10 ml-[90px]">
+    <div className="h-screen flex flex-col bg-white p-4 sm:p-6">
+      <div className="flex flex-col sm:flex-row flex-grow w-full items-center justify-center">
+        <div className="w-full sm:w-1/2 flex flex-col justify-center items-center sm:pr-10 sm:ml-[90px] sm:mb-0 mb-10">
           <LogoSection />
           <SearchBar />
           <VideoSection />
         </div>
+
         {/* Form container */}
-        <div className="w-1/2 h-full flex justify-center items-center pl-10">
+        <div className="w-full sm:w-1/2 h-full flex justify-center items-center sm:pl-10">
           <div className="w-full max-w-md h-auto relative">
             <AnimatePresence mode="wait">
               {!showForgotPassword ? (
@@ -95,6 +96,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <Footer />
 
       {/* Signup Modal */}
